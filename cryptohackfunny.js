@@ -5,14 +5,6 @@
     window.prompt = n.contentWindow.prompt.bind(window);
     window.confirm = n.contentWindow.confirm.bind(window);
     n.remove();
-            if (window.location.pathname != '/play/hack') {
-                alert('bruh');
-            } else {
-                let amount = Number(parseFloat(prompt('How much crypto do you want?')));
-                reactHandler().stateNode.setState({ crypto2: amount, crypto: amount });
-        
-                alert('Crypto added!');
-            };
 })();
 
 function reactHandler() {
