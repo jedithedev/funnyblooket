@@ -39,6 +39,11 @@ function newPassword() {
     return 'done'
 }
 
+function hackUser() {
+    let u = prompt('Who would you like to hack?')
+    Object.values(document.querySelector('#app > div > div'))[1].children[1]._owner.stateNode.setState({toHack : u, cryptoStolen : "", passwordGuessed : "", postHackText : ""});
+}
+
 function footer() {
     let element = document.createElement('div');
     
