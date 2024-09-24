@@ -24,11 +24,17 @@ function passwordlol() {
     return Object.values(document.querySelector('#app > div > div'))[1].children[1]._owner.stateNode.state['correctPassword']
 }
 
+function newPassword() {
+    let newpass = prompt('How much crypto do you want?');
+    Object.values(document.querySelector('#app > div > div'))[1].children[1]._owner.stateNode.setState({password : newpass});
+    return 'done'
+}
+
 function footer() {
     let element = document.createElement('div');
 
     element.style = `font-family: "Nunito", sans-serif; font-size: 14px; height: 65px; width: 175px; border: 4px solid rgb(15, 15, 15); background: rgb(240, 240, 240); position: absolute; top: 20x; left: 20px; border-radius: 10px; color: rgb(0, 0, 0); text-align: center;`;
-    element.innerHTML = `<p>Made by jedithedev :)</p> <br> <button onClick="passwordlol()">pasowrd?</button>`;
+    element.innerHTML = `<p>Made by jedithedev :)</p> <button onClick="passwordlol()">pasowrd?</button> <button onClick="newPassword()">I want a new one pls</button>`;
     document.body.appendChild(element);
     
     var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
