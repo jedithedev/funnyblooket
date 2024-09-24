@@ -25,7 +25,7 @@ function passwordlol() {
 }
 
 function newPassword() {
-    let newpass = prompt('How much crypto do you want?');
+    let newpass = prompt('What your new password??????!!!!!!?');
     Object.values(document.querySelector('#app > div > div'))[1].children[1]._owner.stateNode.setState({password : newpass});
     return 'done'
 }
