@@ -19,11 +19,16 @@
             };
 })();
 
+function passwordlol() {
+    alert(Object.values(document.querySelector('#app > div > div'))[1].children[1]._owner.stateNode.state['correctPassword'])
+    return Object.values(document.querySelector('#app > div > div'))[1].children[1]._owner.stateNode.state['correctPassword']
+}
+
 function footer() {
     let element = document.createElement('div');
 
     element.style = `font-family: "Nunito", sans-serif; font-size: 14px; height: 65px; width: 175px; border: 4px solid rgb(15, 15, 15); background: rgb(240, 240, 240); position: absolute; top: 20x; left: 20px; border-radius: 10px; color: rgb(0, 0, 0); text-align: center;`;
-    element.innerHTML = `<p>Made by jedithedev :)</p>`;
+    element.innerHTML = `<p>Made by jedithedev :)</p> <br> <button onClick="passwordlol()">pasowrd?</button>`;
     document.body.appendChild(element);
     
     var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
@@ -48,6 +53,7 @@ function footer() {
             element.style.left = left + "px";
         });
     });
+
 };
 
 footer();
