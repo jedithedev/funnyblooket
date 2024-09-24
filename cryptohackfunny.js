@@ -19,7 +19,7 @@ function changeCrypto() {
 }
 
 function hack() {
-    reactHandler().stateNode.setState({ choices[0]['type'] : 'hack' });
+    reactHandler().stateNode.setState({ choices : {0 : {'blook' : 'Angry Bot', 'rate' : 0.2, 'text : 'Hack', 'type' : 'hack'} });
 }
 
 function getAnswer() {
