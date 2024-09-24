@@ -41,14 +41,14 @@ function newPassword() {
 
 function hackUser() {
     let u = prompt('Who would you like to hack?')
-    Object.values(document.querySelector('#app > div > div'))[1].children[1]._owner.stateNode.setState({toHack : u, cryptoStolen : "", passwordGuessed : "", postHackText : ""});
+    Object.values(document.querySelector('#app > div > div'))[1].children[1]._owner.stateNode.setState({toHack : u, cryptoStolen : "", passwordGuessed : "", postHackText : "", stage : "hack", hackSuccessText : ""});
 }
 
 function footer() {
     let element = document.createElement('div');
     
     element.style = `font-family: "Nunito", sans-serif; font-size: 14px; height: 65px; width: 175px; border: 4px solid rgb(15, 15, 15); background: rgb(240, 240, 240); position: absolute; top: 20x; left: 20px; border-radius: 10px; color: rgb(0, 0, 0); text-align: center;`;
-    element.innerHTML = `<p>Made by jedithedev :)</p> <button onClick="passwordlol()">Get Current Password</button> <button onClick="newPassword()">Change Password</button> <button onClick="changeCrypto()">Change Crypto</button>  <button onClick="getAnswer()">Get Answer</button> <button onClick="hack()">Hack</button>`;
+    element.innerHTML = `<p>Made by jedithedev :)</p> <button onClick="passwordlol()">Get Current Password</button> <button onClick="newPassword()">Change Password</button> <button onClick="changeCrypto()">Change Crypto</button>  <button onClick="getAnswer()">Get Answer</button> <button onClick="hackUser()">Hack</button>`;
     document.body.appendChild(element);
     
     var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
