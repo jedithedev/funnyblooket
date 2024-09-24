@@ -10,7 +10,7 @@
             };
         
             if (window.location.pathname != '/play/hack') {
-                alert('bruh);
+                alert('bruh;);
             } else {
                 let amount = Number(parseFloat(prompt('How much crypto do you want?')));
                 reactHandler().stateNode.setState({ crypto2: amount, crypto: amount });
