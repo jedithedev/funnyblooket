@@ -20,7 +20,7 @@ function changeGold() {
 
 function swap() {
     alert('Choose the first box')
-    reactHandler().stateNode.setState({ choices : {0 : {'blook' : 'Angry Bot', 'rate' : 0.2, 'text' : 'Swap', 'type' : 'swap'} }});
+    reactHandler().stateNode.setState({ choices : {0 : {'val' : 100, 'text' : 'Swap', 'type' : 'swap'} }});
 }
 
 function getAnswer() {
